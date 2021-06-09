@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login Form</title> <!--Title Login Form-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../js/validate.js"></script> <!--reference JavaScript-->
+	<link rel="stylesheet" href="../css/style.css"> <!--reference CSS style-->
+</head>
+
+<body onload="loadCookies()">
+	<div class="header"> <!--Header content with web name-->
+		<h1>Fatimah Nasi Kandar Self-Pickup</h1>
+		<p>Origin from Perlis, Since 1996</p>
+	</div>
+	<div class="topnavbar"> <!--Top Navigation Bar-->
+		<a href="register.html" class="right">Register</a> <!--Navigation to Register Page-->
+	</div>
+	<div class="main">
+		<center>
+			<img src="../images/fatimahlogo.png"> <!--Front logo for Web-->
+		</center>
+		<div class="container"> <!--Container class for Login-->
+			<form name="loginForm" action="../php/login.php" onsubmit="return validateLoginForm()" method="post">
+				<div class="row">
+					<div class="col-25">
+						<label for="femail">Email</label> <!--email form for Login-->
+					</div>
+					<div class="col-75">
+						<input type="text" id="idemail" name="email" placeholder="Enter valid email">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="lname">Password</label> <!--password form for Login-->
+					</div>
+					<div class="col-75">
+						<input type="password" id="idpass" name="password" placeholder="Enter password">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="lname">Remember</label> <!--remember checkbox cookies for Login-->
+					</div>
+					<div class="col-25" align="left">
+						<div>
+							<label>
+								<input type="checkbox" id="idremember" name="rememberme">
+							</label>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<input type="submit" value="Submit"> <!--submit button for Login-->
+				</div>
+			</form>
+		</div>
+		<br><br>
+	</div>
+
+	<div class="bottomnavbar"> <!--Bottom Navigation Bar-->
+		<a href="../index.html">Home</a> <!--Navigation to Landing Page-->
+		<a href="contact.html">Contact Us</a> <!--Navigation to Contact Us Page-->
+	</div>
+
+</body>
+</html>
